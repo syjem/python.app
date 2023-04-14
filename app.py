@@ -43,3 +43,9 @@ for i in range(10):
 
 for name in names:
     print(name)
+
+# dictionaries
+houses = {"Harry": "Gryffindor", "Draco": "Slytherin"}
+houses["Ron"] = "Gryffindor"
+print(houses["Harry"])
+print(houses)
