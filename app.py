@@ -49,3 +49,10 @@ houses = {"Harry": "Gryffindor", "Draco": "Slytherin"}
 houses["Ron"] = "Gryffindor"
 print(houses["Harry"])
 print(houses)
+
+# functions
+def square(n):
+    return n * n
+
+for i in range(20):
+    print(f"The square of {i} is {square(i)}.")
