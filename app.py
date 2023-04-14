@@ -37,5 +37,9 @@ s.remove(3)
 print(s)
 print(f"The set has {len(s)} elements.")
 
+# Loops
+for i in range(10):
+    print(i)
 
-
+for name in names:
+    print(name)
