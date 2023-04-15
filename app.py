@@ -1,3 +1,4 @@
+import sys
 
 # positive or negative 
 n = int(input("Number: "))
@@ -101,4 +102,22 @@ cars = [
 ]
 cars.append({"carName": "Ferrari", "year": 2005})
 cars.sort(key=lambda cars: cars["year"])
+
 print(cars)
+
+
+# Exceptions in Python
+try:
+    x = int(input("x: "))
+    y = int(input("y: "))
+except ValueError:
+    print("ValueError: Invalid input.")
+    sys.exit(1)
+    
+try:
+    result = x / y
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero.")
+    sys.exit(1)
+
+print(f"{x} / {y} = {result}")
