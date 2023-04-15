@@ -93,3 +93,12 @@ for person in people:
     else:
         print(f"No available seats for {person}.")
 
+# lambda (functional programming in Python)
+cars = [
+    {"carName": "BMW", "year": 2000},
+    {"carName": "Ford", "year": 1998},
+    {"carName": "Tesla", "year": 2010}
+]
+cars.append({"carName": "Ferrari", "year": 2005})
+cars.sort(key=lambda cars: cars["year"])
+print(cars)
